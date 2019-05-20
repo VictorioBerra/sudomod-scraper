@@ -1,0 +1,34 @@
+{
+  "name": "sudomod-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap --cov test.js",
+    "pretest": "standard",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "release": "standard-version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": "cli.js",
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
+    "sywac": "^1.2.1",
+    "sywac-style-basic": "^1.0.1",
+    "tapromise": "^1.1.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "standard": "^12.0.1",
+    "standard-version": "^6.0.1",
+    "tap": "^14.1.0"
+  }
+}
